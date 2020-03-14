@@ -1,4 +1,2 @@
-# !node_modules/three/build/three.min.js
-# !node_modules/three/examples/jsm/controls/OrbitControls.js
 node_modules/three/
 node_modules/underscore/
