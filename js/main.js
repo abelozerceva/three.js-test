@@ -36,7 +36,7 @@ function init() {
 	for (let i = 0; i < numOfCubes; i++) {
 		cubes.push(initCube());
 	}
-	console.log(cubes);
+	// console.log(cubes);
 
 	renderer.render(scene, camera);
 
