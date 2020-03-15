@@ -1,6 +1,6 @@
 'use strict'
 
-require('three');
+var THREE = require('three');
 require('three/OrbitControls');
 
 // import './main'; //draw cubes, EdgesGeometry
