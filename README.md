@@ -5,4 +5,4 @@ Each of the vertices of which has its own color, when you click on it - the edge
 from this vertex must change color to the color of the vertex.
 
 
-html-page: https://belozercevaa.github.io/three.js-test/
+html-page: https://belozercevaa.github.io/three.js-test/dist/
