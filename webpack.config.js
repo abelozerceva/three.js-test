@@ -10,7 +10,8 @@ module.exports = {
   resolve: {
 	alias: {
 		'three/OrbitControls': path.join(__dirname, 'node_modules/three/examples/js/controls/OrbitControls.js'),
-		'three/OBJLoader': path.join(__dirname, 'node_modules/three/examples/js/loaders/OBJLoader.js')
+		'three': path.join(__dirname, 'node_modules/three/build/three.min.js'),
+		// 'three/OBJLoader': path.join(__dirname, 'node_modules/three/examples/js/loaders/OBJLoader.js')
 	}
 },
   plugins:[
