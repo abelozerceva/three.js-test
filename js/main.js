@@ -1,6 +1,6 @@
 'use strict'
 
-import {OrbitControls} from 'three/examples/jsm/controls/OrbitControls';
+import {OrbitControls} from '../node_modules/three/examples/jsm/controls/OrbitControls.js';
 
 let scene, renderer, camera;
 let cube;
