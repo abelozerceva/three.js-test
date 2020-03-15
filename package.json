@@ -1,0 +1,31 @@
+{
+  "name": "three.js-test",
+  "version": "1.0.0",
+  "description": "Draw using Three.js and es6 N cubes. Each of the vertices of which has its own color, when you click on it - the edges of the cube emanating from this vertex must change color to the color of the vertex.",
+  "private": true,
+  "dependencies": {
+    "lodash": "^4.17.15",
+    "milsymbol": "^2.0.0",
+    "three": "^0.114.0"
+  },
+  "devDependencies": {
+    "babel-preset-env": "^1.7.0",
+    "babel-register": "^6.26.0",
+    "webpack": "^4.42.0",
+    "webpack-cli": "^3.3.11"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/belozercevaa/three.js-test.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/belozercevaa/three.js-test/issues"
+  },
+  "homepage": "https://github.com/belozercevaa/three.js-test#readme"
+}
