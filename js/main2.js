@@ -35,7 +35,6 @@ function init() {
 
 	scene = new THREE.Scene(); 
     scene.background = new THREE.Color(backgroundColor);
-    // console.log(scene.background);
 	
 	camera = new THREE.PerspectiveCamera (45, width/height, 1, 10000);
 	camera.position.x = 20;
@@ -48,13 +47,11 @@ function init() {
 	for (let i = 0; i < numOfCubes; i++) {
 		cubes.push(drawCube());
     }
-    console.log(cubes);
 
 	renderer.render(scene, camera);
 
 	raycaster = new THREE.Raycaster();
 	mouse = new THREE.Vector2();
-
 		
 	window.addEventListener ('resize', onWindowResize, false);
 	document.addEventListener( 'mousedown', onDocumentMouseDown, false );

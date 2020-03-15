@@ -9,8 +9,7 @@ let controls;
 let mouse, raycaster, intersects;
 let targets = [];
 
-let numOfCubes = 5;
-
+let numOfCubes = 5; //change count of cubes in scene
 
 init();
 animate();
@@ -36,16 +35,13 @@ function init() {
 	for (let i = 0; i < numOfCubes; i++) {
 		cubes.push(initCube());
 	}
-	// console.log(cubes);
 
 	renderer.render(scene, camera);
 
 	raycaster = new THREE.Raycaster();
 	mouse = new THREE.Vector2();
-
 		
 	window.addEventListener ('resize', onWindowResize, false);
-	// document.addEventListener( 'mousemove', onDocumentMouseMove, false );
 	document.addEventListener( 'mousedown', onDocumentMouseDown, false );
 }
 
@@ -63,19 +59,6 @@ function animate()
 	renderer.render (scene, camera);
 }
 
-// function onDocumentMouseMove( event ) {
-// 	event.preventDefault();
-
-// 	mouse.x = ( event.clientX / window.innerWidth ) * 2 - 1;
-// 	mouse.y = - ( event.clientY / window.innerHeight ) * 2 + 1;
-
-// 	raycaster.setFromCamera(mouse, camera);
-//     intersects = raycaster.intersectObjects(targets);
-//     if (intersects.length > 0){
-// 		intersects[0].object.geometry = new THREE.SphereBufferGeometry( 0.7, 32, 32 );
-// 	}
-// }
-
 function onDocumentMouseDown( event ) {
 	event.preventDefault();
 
@@ -84,10 +67,8 @@ function onDocumentMouseDown( event ) {
 	raycaster.setFromCamera(mouse, camera);
     intersects = raycaster.intersectObjects(targets);
     if (intersects.length > 0){
-		// console.log(intersects[0].object.id);
 		let color = intersects[0].object.material.color;
 		let indexCube = (intersects[0].object.id - 12 - (intersects[0].object.id - 12) % 9) / 9;
-		// console.log(indexCube);
 		cubes[indexCube].material = new THREE.LineBasicMaterial({ color: color, linewidth: 2, });
 	}
 }
@@ -144,7 +125,5 @@ function initCube() {
 		scene.add(spheres[index]);
 		targets.push(spheres[index]);
 	});
-
-	// console.log(spheres);
 	return cube;
 }
