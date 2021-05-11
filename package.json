@@ -4,7 +4,7 @@
   "description": "Draw using Three.js and es6 N cubes. Each of the vertices of which has its own color, when you click on it - the edges of the cube emanating from this vertex must change color to the color of the vertex.",
   "private": true,
   "dependencies": {
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.21",
     "milsymbol": "^2.0.0",
     "three": "^0.114.0"
   },
